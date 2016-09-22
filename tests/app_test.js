@@ -24,6 +24,7 @@ describe('Basic routes tests', function() {
         .get('/pagecount')
         .end(function(err, res) {
             res.should.have.status(200);
+            console.log('got counter')
             done();
         })
 
